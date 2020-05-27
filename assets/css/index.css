@@ -44,6 +44,15 @@
     height: 100%;
 }
 
+#ecomusic {
+    background-color: #465A64;
+    color: white;
+}
+
+#ecomusic img {
+    max-width: 100%;
+}
+
 #footer {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,102,16,1) 0%, rgba(15,203,241,1) 99%);
