@@ -39,7 +39,7 @@
               <a class="nav-link" href="#"><i class="icofont-pine"></i>Maderas</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#"><i class="icofont-cart"></i>Comprar</a>
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#modalCompra"><i class="icofont-cart"></i>Comprar</a>
             </li>
           </ul>
         </div>
@@ -238,6 +238,46 @@
       </div>
     </footer>
     <!-- /Footer -->
+
+    <!--Modal-->
+    <div class="modal fade" id="modalCompra" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Dejanos tus datos y te contactaremos!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <small>
+              En caso de representar una empresa, colocar el Email interno de la misma.
+            </small>
+            <form>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="form-grup col">
+                    <label for="exampleFormControlInput1">Correo electronico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">  
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col pt-2">
+                    <label for="inputPhoneNumber">Numero telefonico</label>
+                    <input type="text" class="form-control" id="inputPhoneNumber" placeholder="2210918273">  
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Modal-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
