@@ -7,281 +7,66 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="https://allyoucan.cloud/cdn/icofont/1.0.1/icofont.css" integrity="sha384-jbCTJB16Q17718YM9U22iJkhuGbS0Gd2LjaWb4YJEZToOPmnKDjySVa323U+W7Fv" crossorigin="anonymous">
 
-
-    <title>Krabi vive la experiencia.</title>
+    <title>Ejercicio JS!</title>
   </head>
-  <body data-spy="scroll" data-target="#navbarSupportedContent" data-offset="0">
-    <!-- Navbar -->
-    <nav id="menu" class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #465A64;">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="assets/img/krabi.png">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#main"><i class="icofont-book"></i>Historia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#models"><i class="icofont-prescription"></i>Modelos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto"><i class="icofont-comment"></i></i>Contactanos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="icofont-pine"></i>Maderas</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#" data-toggle="modal" data-target="#modalCompra"><i class="icofont-cart"></i>Comprar</a>
-            </li>
-          </ul>
-        </div>
-      </div>  
-    </nav>
-    <!-- /Navbar -->
-
-    <!--Main-->
-    <main id="main">
-      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/img/krabi2.jpg" class="d-block w-100" alt="Krabi 1">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/krabi.jpg" class="d-block w-100" alt="Krabi 2">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/krabi3.jpg" class="d-block w-100" alt="Krabi 3">
-          </div>
-        </div>
-        <div class="overlay">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-6 offset-md-6 text-center text-md-right">
-                <h2>KRABI DISFRUTA DE LA MUSICA</h2>
-                <p class="d-none d-md-block">Nuestra historia comienza mucho antes que nosotros, en 1995 se funda Ecomusic S.A
-                   una casa de musica familiar que poco a poco fue expandiendose hasta convertirse en
-                   importadores y distribuidres de sus propias marcas.
-                </br> 
-                   Krabi una de sus marcas propias, representa el verdadero criterio de la empresa, ofreciendo 
-                   una amplia variedad de guitarras clasicas y acusticas. Con detalles unicos y precios inmejorables 
-                   para su categoria, poseen una gama de maderas increibles en su implementacion y excelentes disenos!
-                </p>
-                <button type="button" class="btn btn-krabi">Conocenos</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>    
-      </main>  
-    <!--/Mail-->
-
-    <!--Models-->
-    <section id="models" class="mt-4">
-      <div class="container">
+  <body>
+    <!--Presentacion-->
+    <section id="presentacion" class="pt-5">
         <div class="row">
-          <div class="col text-center text-uppercase mb-4">
-            <h1>Modelos</h1>
-            <small>Mira un poco de lo que ofrecemos.</small>
-          </div>  
+            <div class="col text-center">
+                <h1 class="h4">El ejercicio consiste en mostrarle la ultima letra del nombre al usuario!!</h1>
+                <small class="text-uppercase text-muted">Intente mejorar el ejercicio aplicando un entorno real y algo de diseno con bootstrap!</small>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card" >
-              <img src="assets/img/3922-eq-cw.jpg" class="card-img-top" alt="3922-eq-cw">
-              <div class="card-body">
-                <h5>Model 1</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tellus erat, semper sed aliquam in, mollis nec tortor. Donec vel risus quam. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card" >
-              <img src="assets/img/3922-eq-cw-lh.jpg" class="card-img-top" alt="3922-eq-cw">
-              <div class="card-body">
-                <h5>Model 2</h5>
-                <p class="card-text">Aliquam convallis ipsum quis neque mattis, ac eleifend elit suscipit. Fusce sit amet augue a enim viverra malesuada. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card" >
-              <img src="assets/img/20181121_084445.jpg" class="card-img-top" alt="3922-eq-cw">
-              <div class="card-body">
-                <h5>Model 3</h5>
-                <p class="card-text">Vestibulum in mi quis enim cursus luctus. Praesent nec molestie felis. In hac habitasse platea dictumst. Cras placerat odio nec sem laoreet rhoncus.  </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card" >
-              <img src="assets/img/m5-tb-eq-cw.jpg" class="card-img-top" alt="3922-eq-cw">
-              <div class="card-body">
-                <h5>Model 4</h5>
-                <p class="card-text">Morbi odio metus, vulputate posuere elit congue, consequat commodo orci. Morbi nec tincidunt libero. Aliquam nisi odio, molestie a dolor et, malesuada scelerisque urna. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card" >
-              <img src="assets/img/20181121_084445.jpg" class="card-img-top" alt="3922-eq-cw">
-              <div class="card-body">
-                <h5>Model 5</h5>
-                <p class="card-text">Vestibulum in mi quis enim cursus luctus. Praesent nec molestie felis. In hac habitasse platea dictumst. Cras placerat odio nec sem laoreet rhoncus.  </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card" >
-              <img src="assets/img/3922-eq-cw.jpg" class="card-img-top" alt="3922-eq-cw">
-              <div class="card-body">
-                <h5>Model 6</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tellus erat, semper sed aliquam in, mollis nec tortor. Donec vel risus quam. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
-    <!--/Models-->
-        
-    <!--Contacto-->
-
-    <section id="contacto" class="pt-4 pb-4">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center text-uppercase">
-            <small>¿Tienes alguna duda?</small>
-            <h2>Consultanos</h2>
-          </div>
-        </div>
-        <div class="row">   
-          <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
-            <form>
-              <div class="form-row">
-                <div class="form-group col-12 col-md-6">
-                  <input type="text" class="form-control" placeholder="Nombre">
-                </div>
-                <div class="form-group col-12 col-md-6">
-                  <input type="text" class="form-control" placeholder="Apellido">
-                </div>
-                <div class="form-group col-12 col-md-6">
-                  <input type="text" class="form-control" placeholder="Empresa">
-                </div>
-                <div class="form-group col-12 col-md-6">
-                  <input type="text" class="form-control" placeholder="Numero de telefono">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col">
-                  <textarea name="text" class="form-control form-control-lg" placeholder="Escriba aqui."></textarea>
-                  <small class="form-text text-muted">
-                    Si eres el representante de una empresa! recuerda dejarnos tu contacto dentro de la misma.
-                  </small>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="col">
-                  <button type="button" class="btn btn-contacto btn-block">Enviar</button>
-                </div>
-              </div>
-            </form>
-        </div>
-        </div>
-      </div>
-    </section>
-    <!--/Contacto-->
+    <!--/Presentacion-->
     
-    <!--Ecomusic-->
-    <section id="ecomusic">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-lg-6 pl-0 pr-0">
-            <img src="assets/img/2krabi.jpg">
-          </div>
-          <div class="col-12 col-lg-6 pt-4 pb-4">
-            <h2>Ecomusic</h2>
-            <p>Cras et magna ut massa gravida tempor eu vel mi. Integer finibus quis dolor eu feugiat. Praesent rhoncus metus nec ex laoreet, a scelerisque est viverra. Etiam lobortis sagittis neque, nec faucibus sapien varius id. Pellentesque egestas purus in tincidunt tincidunt. Aenean in ligula nec lorem mollis tempus. Morbi blandit tincidunt dolor dignissim commodo. Nunc sit amet augue sollicitudin, interdum metus eget, semper dolor. Aliquam a eleifend metus. Praesent mollis odio ut libero volutpat commodo. Aenean consectetur, eros vel porta viverra, justo nulla fermentum turpis, eget pellentesque purus ante ut metus. Vestibulum purus justo, malesuada sed tempor varius, tempus vel dui.</p>
-            <br/>
-            <p>Cras suscipit consectetur lobortis. Cras euismod nisi id eleifend imperdiet. Vestibulum pretium lobortis diam, eu vehicula risus venenatis id. Duis quis tortor et lorem dapibus tincidunt et vel enim. Suspendisse mattis quam risus, a gravida turpis viverra eu. Integer ornare ex blandit dolor efficitur egestas sed quis est. Donec nunc massa, vestibulum nec pellentesque ut, cursus id neque. Proin nisi eros, vehicula nec vehicula nec, bibendum quis quam. Aenean et nibh convallis, hendrerit urna sit amet, fermentum lorem.</p>
-            <button type="button" class="btn btn-outline-light"><i class="icofont-computer"></i>Visita nuestra Web</button> 
-          </div>
-        </div>
-      </div>
+    <!--Formulario-->
+    <section id="formulario">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-3 offset-md-3">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Jane">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="lastName">Apellido</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Doe">
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-secondary offset-md-3" onclick="getData()" data-toggle="modal" data-target="#endTask" >Enviar</button>
+        </form>
     </section>
-    <!--/Ecomusic-->
+    <!--/Formulario-->
 
-    <!-- Footer -->
-    <footer id="footer" class="pb-4 pt-4">
-      <div class="container-fluid" >
-        <div class="row text-center" >
-          <div class="col-12">
-              <a href="#">Contacto</a>
-          </div>
-          <div class="col-12">
-              <a href="#">Ubicación</a>
-          </div>
-          <div class="col-12">
-              <a href="#">Referencias</a>
-          </div>
-          <div class="col-12">
-              <a href="#">Ecomusic</a>
+    <!--modal-->
+    <div class="modal fade" id="endTask" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Resultado</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p id="end"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- /Footer -->
+    <!--/modal-->
 
-    <!--Modal-->
-    <div class="modal fade" id="modalCompra" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Dejanos tus datos y te contactaremos!</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <small>
-              En caso de representar una empresa, colocar el Email interno de la misma.
-            </small>
-            <form>
-              <div class="form-group">
-                <div class="form-row">
-                  <div class="form-grup col">
-                    <label for="exampleFormControlInput1">Correo electronico</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">  
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col pt-2">
-                    <label for="inputPhoneNumber">Numero telefonico</label>
-                    <input type="text" class="form-control" id="inputPhoneNumber" placeholder="2210918273">  
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-primary">Enviar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/Modal-->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
