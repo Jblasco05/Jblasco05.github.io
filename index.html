@@ -8,20 +8,25 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Ejercicio JS!</title>
+    <title>Segundo ejercicio JS!</title>
   </head>
   <body>
-    <!--Presentacion-->
-    <section id="presentacion" class="pt-5">
+
+      <!--Presentacion-->
+      <section id="presentacion" class="pt-5">
         <div class="row">
-            <div class="col text-center">
-                <h1 class="h4">El ejercicio consiste en mostrarle la penultima letra del nombre al usuario!!</h1>
-                <small class="text-uppercase text-muted">Intente mejorar el ejercicio aplicando un entorno real y algo de diseno con bootstrap!</small>
+            <div class="col">
+                <h1 class="h5 text-center">En este ejercicio pidieron que generaramos una funcion que tomara dos valores! (nombre y edad) y que devuelva una frase usandolos.</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="h6 pt-3 text-center text-muted">Al igual que en mi ejercicio pasado generare una interfaz visual mas agradable y lo realizare fuera de la consola de chrome.</h1>
             </div>
         </div>
     </section>
     <!--/Presentacion-->
-    
+
     <!--Formulario-->
     <section id="formulario">
         <form>
@@ -31,17 +36,17 @@
                     <input type="text" class="form-control" id="name" placeholder="Jane">
                 </div>
                 <div class="form-group col-md-3">
-                    <label for="lastName">Apellido</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Doe">
+                    <label for="lastName">Edad</label>
+                    <input type="text" class="form-control" id="age" placeholder="18">
                 </div>
             </div>
-            <button type="button" class="btn btn-outline-secondary offset-md-3" onclick="getData()" data-toggle="modal" data-target="#endTask" >Enviar</button>
+            <button type="button" class="btn btn-outline-secondary offset-md-3" onclick="calculandoEdad()" data-toggle="modal" data-target="#endTask" >Enviar</button>
         </form>
     </section>
     <!--/Formulario-->
 
-    <!--modal-->
-    <div class="modal fade" id="endTask" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <!--modal-->
+     <div class="modal fade" id="endTask" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -51,7 +56,8 @@
               </button>
             </div>
             <div class="modal-body">
-              <p id="end"></p>
+                <p>Aproveche de calcular tu edad en relacion a los 30 años!</p>    
+                <p id="end"></p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -62,11 +68,12 @@
     <!--/modal-->
 
 
+        
     <!-- Optional JavaScript -->
+    <script type="text/javascript" src="index.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
   </body>
 </html>
