@@ -1,24 +1,21 @@
-const edadCalculo = 30;
+const mayoriaDeEdad = 18;
+var name;
+var age;
 
 function calculandoEdad() {
-    var name = document.getElementById('name').value;
-    var age = parseFloat(document.getElementById('age').value);
+    name = document.getElementById('name').value;
+    age = parseFloat(document.getElementById('age').value);
+    FuncionConEdad()
+}
 
-    if (age < edadCalculo) {
-        document.getElementById('end').innerHTML = `tu nombre es ${name} y te faltan ${edadCalculo - age} años para cumplir ${edadCalculo}`
-    } 
-    else if ( age == edadCalculo) {
-        document.getElementById('end').innerHTML = `tu nombre es ${name} y tienes ${edadCalculo} años de edad`
-    } 
+const FuncionConEdad= () => {
+    if (age < mayoriaDeEdad) {
+        document.getElementById('end').innerHTML = `Hola ${name} lo lamentamos pero aun no eres mayor de edad vuelve cuando tengas ${mayoriaDeEdad}`
+    }
+    else if (age === mayoriaDeEdad) {
+        document.getElementById('end').innerHTML = `Hola ${name} justo tienes ${mayoriaDeEdad} Ya puedes ingresar.`
+    }
     else {
-        var respuesta
-        if ((age-edadCalculo)==1){
-            respuesta = `año`
-        }
-        else {
-            respuesta = `años`
-        }
-        
-        document.getElementById('end').innerHTML = `tu nombre es ${name} y cumpliste ${edadCalculo} años hace ${age - edadCalculo} ${respuesta}`
+        document.getElementById('end').innerHTML =`Hola ${name} Bienvenido.`
     }
 }
